@@ -1,0 +1,52 @@
+NumInscrip;Nom;Prenom;DateNiss;Adresse;Mail;Tel;Section;Niveau
+12345678;Toraa;Mazen;01/03/2004;Ras Jebel;mazentoraa2@gmail.com;58877447;Cycle Préparatoire;1
+87654321;Laamari;Achraf;17/10/2003;Koutine;achraflaamari@gmail.com;56954284;ING Informatique;1
+11111111;Dineri;Karim;02/06/2003;Metlaoui;dinerikarim@hotmail.com;99654212;ING Eléctronique;3
+22222222;Taalah;Ayoub;17/07/2003;Mhamdia;taalahayoub@yahoo.fr;99654123;Mastère Pro GL;2
+33333333;Abbassi;Kassem;03/09/2003;Kasserine;kassemabbassi5@gmail.com;20259607;Licence Math;3
+44444444;Ben Nejma;Nour;05/06/2003;Ras Jebal;nourbennejma@gmail.com;52755705;Licence Sc.Info;1
+55555555;Sebai ;Asma;16/07/2003;Ras Jebal;assmasebai@hotmail.com;98196837;Cycle Préparatoire;2
+66666666;Benhadi;Baha;29/11/2003;Bizerte;benhadibaha@gmail.com;96142767;Licence S.Embarq.;2
+77777777;Fendi;Ahmed;20/08/2003;Rades;ahmedfendi@yahoo.fr;95027366;ING Eléctronique;1
+88888888;Touil;Houssine;11/01/2004;Kalaat Andalos;hassenhassen@hassen.com;58128206;Licence EEA;3
+99999999;Kacem;Ahmed;02/03/2003;Hay Riadh;genocem@gmail.com;94163499;Licence Math;2
+95959595;Thabet;Raid;05/06/2003;Mednine;thabetraid@gmail.com;55640597;ING Eléctronique;1
+74108520;Ayedi;Omar;20/05/2003;Sidi Amor Bouhajla;ayediomar@ouuh.com;52217730;Licence S.Embarq.;2
+96308520;Ben Salah;Melik;25/08/2003;Monastir;melikbensalah@hotmail.com;26924447;Licence Sc.Info;1
+32165498;Hellel;Omar;10/09/2003;Hay El Ghazela;omarhellel@gmail.com;29764093;Mastère Pro GL;1
+11223344;Mokcheh;Rahim;25/07/2003;Mateur;rahimmok@gmail.com;93491436;Licence Sc.Info;1
+44332211;Ghodhben;Mohamed;30/04/2003;Ariena Soghra;hamaghod@gmail.com;29023611;Licence Math;3
+55667788;Soued;Selma;17/11/2003;Sayeda;selmasoued@gmail.com;58166176;Cycle Préparatoire;1
+88776655;Haj Mohamed;Oumayma;17/11/2003;Hay Riadh;oumaymahmoh@gmail.com;52962786;Mastère Pro GL;2
+99887766;Jmal;Mariem;05/09/2003;Gabes;mariemjmal@gmail.com;50369455;Cycle Préparatoire;2
+66778899;Toumi ;Ala;31/01/2004;Kebili;toumialaa@hotmail.com;95863334;Cycle Préparatoire;2
+95135746;Omri;Anen;08/10/2003;Gafsa;omrianan@gmail.com;52146321;Licence TIC;2
+84848484;Braiek;Rayen;01/02/2003;Sousse;braiek@gmail.com;84848484;Licence S.Embarq.;1
+62626262;Bouchnak;Oussema;15/09/2003;Mahdia;oussema@gmail.com;26262626;ING Informatique;1
+30303030;Sghairi;Ahmed Taha;24/01/2004;Bardo;taha@gmail.com;23030303;Licence TIC;2
+51515151;Safouene;Ziedi;18/12/2003;Manzel Tmim;safouene@gmail.com;51515151;Mastère Pro GL;2
+12121212;Tasnim;Tahri;06/06/2003;Sfax;tasnime@gmail.com;52121212;Licence TIC;2
+13131313;Aouiti;Nada;06/09/2003;Gasserine;nada@gmail.com;53131313;Licence S.Embarq.;3
+14141414;Zahraoui;Rania;09/01/2004;Tazarka;rania@gmail.com;91414141;Licence S.Embarq.;2
+15151515;Yaacoub;Doua;12/12/2003;Gabes;doua@gmail.com;91515151;ING Informatique;3
+16161616;Kharrat;Yassine;15/06/2003;Kairoan;yassinekharrat@gmail.com;21616161;Licence Sc.Info;3
+17171717;Kraiem;Nassim;12/02/2003;Ksar Hlel;nassimkraiem@gmail.com;21818181;Licence EEA;1
+18181818;Mahrsia;Wassim;10/06/2003;Ksar Hlel;wassim@gmail.com;51919191;Mastère Pro GL;1
+19191919;Mtawa;Ahmed;20/05/2003;Moknine;mtawa@gmail.com;20202020;Licence EEA;2
+20202020;Elloumi;Khadija;23/11/2003;Manouba;khadija@gmail.com;21212121;ING Eléctronique;3
+21212121;Sakhraoui;Hiba;23/11/2002;Gafsa;hiba@gmail.com;23232323;ING Informatique;3
+23232323;Hsin;Isra;02/03/2003;Kebili;israhsin@gmail.com;24242424;Licence Math;2
+24242424;Rafraf;Ahmed;16/12/2002;Kairoan;rafraf@gmail.com;25252525;Licence Math;2
+25252525;Fedi;Ibrahmi;05/01/2003;Gafsa;fedi@gmail.com;26262626;Licence Sc.Info;1
+26262626;Kaboubi;Louai;16/02/2003;Rafraf;kaboubi@gmail.com;27272727;Licence Sc.Info;3
+27272727;Dhouibi;Yassine;14/07/2001;Kairoan;douibi@gmail.com;28282828;ING Informatique;1
+28282828;Ghorbel;Houssem;02/09/2002;Jamel;moonskies@gmail.com;29292929;Cycle Préparatoire;1
+29292929;BenAbdlKder;Mahmoud;22/11/2003;Kebili;mahmoud@gmail.com;23030303;ING Eléctronique;3
+30303031;Debbabi;Skander;14/02/2003;Tataouine;skan@gmail.com;53030303;Licence EEA;2
+31313131;Ben Dhieb;Mohamed Ali;12/06/2003;Djerba;dali@gmail.com;93131313;Cycle Préparatoire;2
+32323232;Chebbi;Moataz;14/12/2003;Touzer;moataz@gmail.com;53232323;Licence Sc.Info;1
+34343434;Daoudi;Iheb;06/04/2002;Nabeul;rouge@gmail.com;53434343;Licence Math;1
+35353535;Ajmi;Farah;12/06/2003;Mahdia;farah@gmail.com;93535353;Licence EEA;3
+36363636;Aloulou;Fares;14/08/2003;Sousse;fares@gmail.com;93636363;ING Informatique;2
+37373737;Bouneni;Rayene;06/03/2004;Manzel Horr;bounenirayen@gmail,com;23737373;Cycle Préparatoire;1
+85214789;Omrani;Yasmeena;12/04/2002;Jamel;omraniyesmine@gmail.com;22551987;ING Informatique;2

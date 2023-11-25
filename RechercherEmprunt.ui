@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RechercherEmprunt</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>751</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <widget class="QDateEdit" name="EdDateEmp">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>304</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="EdDateRetour">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>342</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbDateEmp">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>304</y>
+       <width>431</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Les livres empruntés le:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbDateRetour">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>342</y>
+       <width>431</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Les livres retournés le:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbRef">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>244</y>
+       <width>431</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Recherche par référence du livre</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbNumInscrip">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>184</y>
+       <width>431</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Recherche par numéro d'inscription</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EdRef">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>244</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="EdNumInscrip">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>184</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Rechercher">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>530</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Rechercher</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>10</y>
+       <width>101</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/icons/img/IconEmprunt.webp</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Titre_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>40</y>
+       <width>421</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calisto MT</family>
+       <pointsize>25</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Rechercher un Emprunt</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbEmpD">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>381</y>
+       <width>431</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Les livres empruntés entre:</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="EdEmpDEmp">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>381</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="EdEmpDRet">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>411</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="EdRetDRet">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>479</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="EdRetDEmp">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>449</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbRetD">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>449</y>
+       <width>431</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Les livres retournés entre:</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="DateEmpBut">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="DateRetBut">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>348</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="EmpDBut">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>403</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="RetDBut">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>470</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LbAfficher">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>124</y>
+       <width>431</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(171,171,171);</string>
+     </property>
+     <property name="text">
+      <string>Afficher tous les emprunts</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Afficher">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>124</y>
+       <width>231</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Gothic</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>Afficher</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ErrNumInscrip">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>224</y>
+       <width>661</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>12</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ErrRef">
+     <property name="geometry">
+      <rect>
+       <x>51</x>
+       <y>284</y>
+       <width>701</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>12</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="RefInscrip">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>224</y>
+       <width>16</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ErrAnnee_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>106</y>
+       <width>661</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>11</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Vous pouvez rechercher par le num d'inscription, la référence ou les deux</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ErrDate">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>510</y>
+       <width>661</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>12</pointsize>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(255,0,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Ressources/img/isimm.png</normaloff>Ressources/img/isimm.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>84</width>
+      <height>72</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Return">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>660</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>&lt;&lt; Retourner à la page d'accueil</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="img2">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>350</y>
+      <width>261</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Ressources/img/Readstud.png</normaloff>Ressources/img/Readstud.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>229</width>
+      <height>391</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="img2_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>600</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Ressources/img/home.png</normaloff>Ressources/img/home.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>95</width>
+      <height>45</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>631</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Ressources/img/entete.png</normaloff>Ressources/img/entete.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>571</width>
+      <height>509</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1366</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Ressources/img/Background.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Fermer">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>690</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Fermer</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Ressources/img/Supprimer.png</normaloff>Ressources/img/Supprimer.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>29</width>
+      <height>56</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>img2</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>img2_2</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>Return</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>Fermer</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>EdNumInscrip</tabstop>
+  <tabstop>EdRef</tabstop>
+  <tabstop>EdDateEmp</tabstop>
+  <tabstop>EdDateRetour</tabstop>
+  <tabstop>EdEmpDEmp</tabstop>
+  <tabstop>EdEmpDRet</tabstop>
+  <tabstop>EdRetDEmp</tabstop>
+  <tabstop>EdRetDRet</tabstop>
+  <tabstop>Rechercher</tabstop>
+  <tabstop>Return</tabstop>
+  <tabstop>Fermer</tabstop>
+  <tabstop>img2</tabstop>
+  <tabstop>img2_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_2</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Ressources/img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

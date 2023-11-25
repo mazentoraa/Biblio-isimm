@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Accueil</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-image: url(&quot;Ressources\img\Background.jpg&quot;);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: padding-box;
+	background-size: cover;
+	background-attachment: scroll;
+}</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>124</width>
+    <height>124</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-image:url(C:\Users\LENOVO\Documents\CPI_1\Semestre 2\Programmation Python\Projet Gestion Emprunts\Ressources\img\Background.jpg);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <widget class="QWidget" name="gridWidget" native="true">
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="5" column="0">
+        <spacer name="verticalSpacer_16">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="6" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Réalisé par: Mazen Toraa</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="maximumSize">
+            <size>
+             <width>91</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Fermer</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>Ressources/img/Supprimer.png</normaloff>Ressources/img/Supprimer.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>29</width>
+             <height>56</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Constantia</family>
+           <pointsize>25</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Gestion d'emprunts de la bibliothèque de l'ISIMM</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <spacer name="verticalSpacer_20">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer_21">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QPushButton" name="AjoutEtudIcon">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>130</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>Ressources/img/IconEtud.png</normaloff>Ressources/img/IconEtud.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>96</width>
+               <height>127</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AjoutEtudBut_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calisto MT</family>
+               <pointsize>21</pointsize>
+               <bold>false</bold>
+               <kerning>false</kerning>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>IBeamCursor</cursorShape>
+             </property>
+             <property name="mouseTracking">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(218, 218, 218);</string>
+             </property>
+             <property name="text">
+              <string>Gestion des étudiants</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AjoutEtudBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Ajouter un nouvel étudiant</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SuppEtudBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Supprimer des étudiants</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ModifierEtudBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Modifier un étudiant</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="RechEtudBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Recherche et Affichage</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="AjoutLivreIcon">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>130</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>Ressources/img/IconBook2.png</normaloff>Ressources/img/IconBook2.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>96</width>
+               <height>127</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AjoutEtudBut_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calisto MT</family>
+               <pointsize>21</pointsize>
+               <bold>false</bold>
+               <kerning>false</kerning>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>IBeamCursor</cursorShape>
+             </property>
+             <property name="mouseTracking">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(218, 218, 218);</string>
+             </property>
+             <property name="text">
+              <string>Gestion des livres</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AjoutLivreBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Ajouter un nouveau livre</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SuppLivreBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Supprimer des livres</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ModifLivreBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Modifier un livre</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="RechLivreBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Recherche et Affichage</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QPushButton" name="AjoutEmpruntIcon">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>130</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>Ressources/img/IconBookEtud.png</normaloff>Ressources/img/IconBookEtud.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>96</width>
+               <height>127</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AjoutEtudBut_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Calisto MT</family>
+               <pointsize>21</pointsize>
+               <bold>false</bold>
+               <kerning>false</kerning>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>IBeamCursor</cursorShape>
+             </property>
+             <property name="mouseTracking">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(218, 218, 218);</string>
+             </property>
+             <property name="text">
+              <string>Gestion des emprunts</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>true</bool>
+             </property>
+             <property name="default">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AjoutEmpruntBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Ajouter un nouvel emprunt</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="RetourEmpruntBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Retour/Suppression d'emprunts</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="ModifEmpruntBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Modifier un emprunt</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="RechEmpruntBut">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>390</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Century Gothic</family>
+               <pointsize>18</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Recherche et Affichage</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetNoConstraint</enum>
+         </property>
+         <item>
+          <widget class="QPushButton" name="ISIMM">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>Ressources/img/isimm.png</normaloff>Ressources/img/isimm.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>84</width>
+             <height>72</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Entete">
+           <property name="maximumSize">
+            <size>
+             <width>581</width>
+             <height>61</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>Ressources/img/entete.png</normaloff>Ressources/img/entete.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>571</width>
+             <height>509</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="AjoutEmpruntIcon_3">
+           <property name="maximumSize">
+            <size>
+             <width>108</width>
+             <height>91</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>Ressources/img/Books.png</normaloff>Ressources/img/Books.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>96</width>
+             <height>127</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255), stop:1 rgba(192, 192, 192, 255));
+</string>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Accueil</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_tudiants">
+    <property name="title">
+     <string>Gestion des étudiants</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_des_tudiants">
+     <property name="title">
+      <string>Mise à jour des étudiants</string>
+     </property>
+     <addaction name="AjoutEtudMenu"/>
+     <addaction name="SuppEtudMenu"/>
+     <addaction name="ModifEtudMenu"/>
+    </widget>
+    <addaction name="menuMise_jour_des_tudiants"/>
+    <addaction name="RechEtudMenu"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_Mati_res">
+    <property name="title">
+     <string>Gestion des Livres</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_de_la_liste_des_livres">
+     <property name="title">
+      <string>Mise à jour de la liste des livres</string>
+     </property>
+     <addaction name="AjoutLivreMenu"/>
+     <addaction name="SuppLivreMenu"/>
+     <addaction name="ModifLivreMenu"/>
+    </widget>
+    <addaction name="menuMise_jour_de_la_liste_des_livres"/>
+    <addaction name="RechLivreMenu"/>
+   </widget>
+   <widget class="QMenu" name="menuGestion_des_Emprunts">
+    <property name="title">
+     <string>Gestion des Emprunts</string>
+    </property>
+    <widget class="QMenu" name="menuMise_jour_des_emprunts">
+     <property name="title">
+      <string>Mise à jour des emprunts</string>
+     </property>
+     <addaction name="AjoutEmpruntMenu"/>
+     <addaction name="RetourEmpruntMenu"/>
+     <addaction name="ModifEmpruntMenu"/>
+    </widget>
+    <addaction name="menuMise_jour_des_emprunts"/>
+    <addaction name="RechEmpruntMenu"/>
+   </widget>
+   <widget class="QMenu" name="menuR_cuperation_des_fichiers">
+    <property name="title">
+     <string>Récuperation des fichiers</string>
+    </property>
+    <addaction name="RecupEtudMenu"/>
+    <addaction name="RecupLivreMenu"/>
+    <addaction name="RecupEmpMenu"/>
+    <addaction name="RecupMenu"/>
+   </widget>
+   <widget class="QMenu" name="menuEnregistrement_des_fichiers">
+    <property name="title">
+     <string>Enregistrement des fichiers</string>
+    </property>
+    <addaction name="EnregEtudMenu"/>
+    <addaction name="EnregLivreMenu"/>
+    <addaction name="EnregEmpMenu"/>
+    <addaction name="EnregMenu"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuGestion_des_tudiants"/>
+   <addaction name="menuGestion_des_Mati_res"/>
+   <addaction name="menuGestion_des_Emprunts"/>
+   <addaction name="menuR_cuperation_des_fichiers"/>
+   <addaction name="menuEnregistrement_des_fichiers"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="AjoutEtudMenu">
+   <property name="text">
+    <string>Ajouter un nouvel étudiant</string>
+   </property>
+  </action>
+  <action name="AjoutLivreMenu">
+   <property name="text">
+    <string>Ajouter un nouveau livre</string>
+   </property>
+  </action>
+  <action name="actionModifier_le_nombre_d_exemplaires_d_un_livre">
+   <property name="text">
+    <string>Modifier le nombre d'exemplaires d'un livre</string>
+   </property>
+  </action>
+  <action name="actionSupression_d_un_tudiant_donn">
+   <property name="text">
+    <string>Supression d'un étudiant donné</string>
+   </property>
+  </action>
+  <action name="actionSupression_des_tudiants_d_une_section_donn_e">
+   <property name="text">
+    <string>Supression des étudiants d'une section donnée</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_d_un_niveau_donn">
+   <property name="text">
+    <string>Suppression des étudiants d'un niveau donné</string>
+   </property>
+  </action>
+  <action name="actionSuppression_des_tudiants_d_une_section_et_un_niveau_donn">
+   <property name="text">
+    <string>Suppression des étudiants d'une section et un niveau donné</string>
+   </property>
+  </action>
+  <action name="actionT_l_phone">
+   <property name="text">
+    <string>Téléphone</string>
+   </property>
+  </action>
+  <action name="actionMail">
+   <property name="text">
+    <string>Mail</string>
+   </property>
+  </action>
+  <action name="actionAdresse">
+   <property name="text">
+    <string>Adresse</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_tudiants">
+   <property name="text">
+    <string>Contenu du dictionnaire étudiants</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_num_ro_d_inscription">
+   <property name="text">
+    <string>Recherche par numéro d'inscription</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section">
+   <property name="text">
+    <string>Recherche par section</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_section_et_niveau">
+   <property name="text">
+    <string>Recherche par section et niveau</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_niveau">
+   <property name="text">
+    <string>Recherche par niveau</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_un_livre_donn">
+   <property name="text">
+    <string>Supprimer un livre donné</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_livres_d_un_auteur_donn">
+   <property name="text">
+    <string>Supprimer livres d'un auteur donné</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_livres_d_une_ann_e_donn_e">
+   <property name="text">
+    <string>Supprimer livres d'une année donnée</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_LIVRE">
+   <property name="text">
+    <string>Contenu du dictionnaire LIVRE</string>
+   </property>
+  </action>
+  <action name="actionrECHERCHE_PAR_R2F2RENCE">
+   <property name="text">
+    <string>Recherche par référence</string>
+   </property>
+  </action>
+  <action name="actionRecherche_par_titre">
+   <property name="text">
+    <string>Recherche par titre</string>
+   </property>
+  </action>
+  <action name="actionRecherche_libres_par_ann_e_dition_donn_e">
+   <property name="text">
+    <string>Recherche livres par année édition donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_d_un_auteur_donn">
+   <property name="text">
+    <string>Recherche livres d'un auteur donné</string>
+   </property>
+  </action>
+  <action name="actionRecherche_et_affichage_des_libres_par_ordre_alphab_tique">
+   <property name="text">
+    <string>Recherche et affichage des livres par ordre alphabétique</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_nouvel_emprunt">
+   <property name="text">
+    <string>Ajouter un nouvel emprunt</string>
+   </property>
+  </action>
+  <action name="actionRetour_d_un_emprunt">
+   <property name="text">
+    <string>Retour d'un emprunt</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_un_emprunt">
+   <property name="text">
+    <string>Supprimer un emprunt</string>
+   </property>
+  </action>
+  <action name="actionDate_emprunt">
+   <property name="text">
+    <string>Date emprunt</string>
+   </property>
+  </action>
+  <action name="actionDate_retour">
+   <property name="text">
+    <string>Date retour</string>
+   </property>
+  </action>
+  <action name="actionContenu_du_dictionnaire_EMPRUNT">
+   <property name="text">
+    <string>Contenu du dictionnaire EMPRUNT</string>
+   </property>
+  </action>
+  <action name="actionRecherche_emprunts_par_livre">
+   <property name="text">
+    <string>Recherche emprunts par livre</string>
+   </property>
+  </action>
+  <action name="actionRecherche_emprunts_par_tudiant">
+   <property name="text">
+    <string>Recherche emprunts par étudiant</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_emprunt_s_une_date_donn_e">
+   <property name="text">
+    <string>Recherche livres empruntés à une date donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_retourn_s_une_date_donn_e">
+   <property name="text">
+    <string>Recherche livres retournés à une date donnée</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_emprunt_s_entre_2_dates_donn_es">
+   <property name="text">
+    <string>Recherche livres empruntés entre 2 dates données</string>
+   </property>
+  </action>
+  <action name="actionRecherche_livres_retourn_s_entre_2_dates_donn_es">
+   <property name="text">
+    <string>Recherche livres retournés entre 2 dates données</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_ETUDIANTS">
+   <property name="text">
+    <string>Enregistrement fichier ETUDIANTS</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_ETUDIANTS">
+   <property name="text">
+    <string>Récupération fichier ETUDIANTS</string>
+   </property>
+  </action>
+  <action name="actionEnregistrement_fichier_LIVRES">
+   <property name="text">
+    <string>Enregistrement fichier LIVRES</string>
+   </property>
+  </action>
+  <action name="actionR_cup_ration_fichier_LIVRES">
+   <property name="text">
+    <string>Récupération fichier LIVRES</string>
+   </property>
+  </action>
+  <action name="actionEnregistremet_fichier_EMPRUNTS">
+   <property name="text">
+    <string>Enregistremet fichier EMPRUNTS</string>
+   </property>
+  </action>
+  <action name="RecupEmpruntMenu">
+   <property name="text">
+    <string>Récupération fichier EMPRUNTS</string>
+   </property>
+  </action>
+  <action name="SuppEtudMenu">
+   <property name="text">
+    <string>Supprimer des étudiants</string>
+   </property>
+  </action>
+  <action name="ModifEtudMenu">
+   <property name="text">
+    <string>Modifier un étudiant</string>
+   </property>
+  </action>
+  <action name="RechEtudMenu">
+   <property name="text">
+    <string> Rechercher et Afficher</string>
+   </property>
+  </action>
+  <action name="SuppLivreMenu">
+   <property name="text">
+    <string>Supprimer des livres</string>
+   </property>
+  </action>
+  <action name="ModifLivreMenu">
+   <property name="text">
+    <string>Modifier le nombre d'exemplaires d'un livre</string>
+   </property>
+  </action>
+  <action name="RechLivreMenu">
+   <property name="text">
+    <string>Recherche et Affichage</string>
+   </property>
+  </action>
+  <action name="AjoutEmpMenu">
+   <property name="text">
+    <string>Ajouter un emprunt</string>
+   </property>
+  </action>
+  <action name="SuppEmpMenu">
+   <property name="text">
+    <string>Supprimer des emprunts</string>
+   </property>
+  </action>
+  <action name="ModifEmpMenu">
+   <property name="text">
+    <string>Modifier un emprunt</string>
+   </property>
+  </action>
+  <action name="RecupEtudMenu">
+   <property name="text">
+    <string>Récupérer le fichier Etudiants</string>
+   </property>
+  </action>
+  <action name="RecupLivreMenu">
+   <property name="text">
+    <string>Récupérer le fichier Livres</string>
+   </property>
+  </action>
+  <action name="RecupEmpMenu">
+   <property name="text">
+    <string>Récupérer le fichier Emprunts</string>
+   </property>
+  </action>
+  <action name="EnregEtudMenu">
+   <property name="text">
+    <string>Enregistrer le fichier Etudiants</string>
+   </property>
+  </action>
+  <action name="EnregLivreMenu">
+   <property name="text">
+    <string>Enregistrer le fichier Livres</string>
+   </property>
+  </action>
+  <action name="EnregEmpMenu">
+   <property name="text">
+    <string>Enregistrer le fichier Emprunts</string>
+   </property>
+  </action>
+  <action name="EnregMenu">
+   <property name="text">
+    <string>Enregistrer tout</string>
+   </property>
+  </action>
+  <action name="RecupMenu">
+   <property name="text">
+    <string>Récupérer tout</string>
+   </property>
+  </action>
+  <action name="RechEmpruntMenu">
+   <property name="text">
+    <string>Recherche et Affichage</string>
+   </property>
+  </action>
+  <action name="AjoutEmpruntMenu">
+   <property name="text">
+    <string>Ajouter un emprunt</string>
+   </property>
+  </action>
+  <action name="RetourEmpruntMenu">
+   <property name="text">
+    <string>Supprimer des emprunts</string>
+   </property>
+  </action>
+  <action name="ModifEmpruntMenu">
+   <property name="text">
+    <string>Modifier des emprunts</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>SuppEtudBut</tabstop>
+  <tabstop>RechEtudBut</tabstop>
+  <tabstop>AjoutLivreBut</tabstop>
+  <tabstop>SuppLivreBut</tabstop>
+  <tabstop>ModifLivreBut</tabstop>
+  <tabstop>RechLivreBut</tabstop>
+  <tabstop>ModifEmpruntBut</tabstop>
+  <tabstop>RechEmpruntBut</tabstop>
+  <tabstop>AjoutLivreIcon</tabstop>
+  <tabstop>AjoutEtudIcon</tabstop>
+  <tabstop>ISIMM</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../Ressources/img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
